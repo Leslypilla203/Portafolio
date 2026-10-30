@@ -1,155 +1,173 @@
-// Datos de KUPI
+// 1. Datos de KUPI
 const kupiItems = [
   {
     title: "Interface Overview",
     categoryName: "KUPI UI/UX",
-    src: "bocetos/Kupi/Interface.svg",
+    src: "bocetos/paginas web/Kupi/Interface.svg",
     desc: "Vista general y arquitectura de los componentes clave de la aplicación móvil.",
     aspect: "tall"
   },
   {
     title: "Pantalla Principal (Dashboard)",
     categoryName: "KUPI UI/UX",
-    src: "bocetos/Kupi/default 1.svg",
+    src: "bocetos/paginas web/Kupi/default 1.svg",
     desc: "Diseño central de la pantalla principal con accesos rápidos e interfaz depurada.",
     aspect: "tall"
   },
   {
     title: "Flujo de Usuario - Navegación 1",
     categoryName: "KUPI UI/UX",
-    src: "bocetos/Kupi/default 2.svg",
+    src: "bocetos/paginas web/Kupi/default 2.svg",
     desc: "Módulos interactivos y estados activos de navegación.",
     aspect: "tall"
   },
   {
     title: "Flujo de Usuario - Navegación 2",
     categoryName: "KUPI UI/UX",
-    src: "bocetos/Kupi/default 3.svg",
+    src: "bocetos/paginas web/Kupi/default 3.svg",
     desc: "Estructura de tarjetas e interacción de listados.",
     aspect: "tall"
   },
   {
     title: "Módulo de Acciones & Filtros",
     categoryName: "KUPI UI/UX",
-    src: "bocetos/Kupi/default 4.svg",
+    src: "bocetos/paginas web/Kupi/default 4.svg",
     desc: "Diseño de controles de filtrado y selectores rápidos.",
     aspect: "tall"
   },
   {
     title: "Vista de Detalle & Exploración",
     categoryName: "KUPI UI/UX",
-    src: "bocetos/Kupi/default 5.svg",
+    src: "bocetos/paginas web/Kupi/default 5.svg",
     desc: "Despliegue de información extendida con jerarquía visual óptima.",
     aspect: "tall"
   },
   {
     title: "Gestión de Servicios & Procesos",
     categoryName: "KUPI UI/UX",
-    src: "bocetos/Kupi/default 6.svg",
+    src: "bocetos/paginas web/Kupi/default 6.svg",
     desc: "Pantallas de gestión operativa y seguimiento en tiempo real.",
     aspect: "tall"
   },
   {
     title: "Perfil de Usuario & Ajustes",
     categoryName: "KUPI UI/UX",
-    src: "bocetos/Kupi/default 7.svg",
+    src: "bocetos/paginas web/Kupi/default 7.svg",
     desc: "Configuración de cuenta, seguridad y preferencias del usuario.",
     aspect: "tall"
   },
   {
     title: "Centro de Notificaciones",
     categoryName: "KUPI UI/UX",
-    src: "bocetos/Kupi/default 8.svg",
+    src: "bocetos/paginas web/Kupi/default 8.svg",
     desc: "Historial de alertas y notificaciones push organizadas cronológicamente.",
     aspect: "tall"
   },
   {
     title: "Ventanas Modales & Confirmación",
     categoryName: "KUPI UI/UX",
-    src: "bocetos/Kupi/default 9.svg",
+    src: "bocetos/paginas web/Kupi/default 9.svg",
     desc: "Flujo de diálogos de confirmación y microinteracciones de seguridad.",
     aspect: "tall"
   },
   {
     title: "Métricas & Análisis de Datos",
     categoryName: "KUPI UI/UX",
-    src: "bocetos/Kupi/default 10.svg",
+    src: "bocetos/paginas web/Kupi/default 10.svg",
     desc: "Representación visual de estadísticas, resúmenes y balances.",
     aspect: "tall"
   },
   {
     title: "Resumen Operativo & Cierre",
     categoryName: "KUPI UI/UX",
-    src: "bocetos/Kupi/default 11.svg",
+    src: "bocetos/paginas web/Kupi/default 11.svg",
     desc: "Verificación de pasos completados y comprobantes de proceso.",
     aspect: "tall"
   }
 ];
 
-// Datos de KANNA MARKET
+// 2. Datos de KANNA MARKET
 const kannaItems = [
   {
     title: "Identidad Visual & Logotipo Kanna Market",
     categoryName: "Branding & Web",
-    src: "bocetos/Kannamarket/logo_kannamarket.png",
+    src: "bocetos/paginas web/Kannamarket/logo_kannamarket.png",
     desc: "Diseño de identidad corporativa y logotipo adaptado para cabecera e interfaces responsive.",
     aspect: "wide"
   },
   {
     title: "Catálogo Online — Gotas CBD Mascotas",
     categoryName: "E-Commerce / Producto",
-    src: "bocetos/Kannamarket/cbd_gotas_perros_1(1)-crop-u2921.png",
+    src: "bocetos/paginas web/Kannamarket/cbd_gotas_perros_1(1)-crop-u2921.png",
     desc: "Fotografía y tarjeta de producto optimizada para e-commerce en la categoría veterinaria.",
     aspect: "square"
   },
   {
     title: "Línea Terapéutica — Pomada CBD Salud",
     categoryName: "E-Commerce / Producto",
-    src: "bocetos/Kannamarket/cbd_pomada_salud_1-crop-u1067.png",
+    src: "bocetos/paginas web/Kannamarket/cbd_pomada_salud_1-crop-u1067.png",
     desc: "Presentación de producto con enfoque clínico y bienestar corporal.",
     aspect: "square"
   },
   {
     title: "Suplementos — Vitaminas CBD Salud",
     categoryName: "E-Commerce / Producto",
-    src: "bocetos/Kannamarket/cbd_vitamina_salud_2-crop-u1074.png",
+    src: "bocetos/paginas web/Kannamarket/cbd_vitamina_salud_2-crop-u1074.png",
     desc: "Ficha gráfica de suplementación y vitaminas enriquecidas con CBD.",
     aspect: "square"
   },
   {
     title: "Cosmética Natural — Crema Corporal 14",
     categoryName: "E-Commerce / Cosmética",
-    src: "bocetos/Kannamarket/crema_de_cannabis_14.png",
+    src: "bocetos/paginas web/Kannamarket/crema_de_cannabis_14.png",
     desc: "Renderizado y exhibición de línea cosmética para el cuidado de la piel.",
     aspect: "square"
   },
   {
     title: "Cosmética Natural — Crema Hidratante 5",
     categoryName: "E-Commerce / Cosmética",
-    src: "bocetos/Kannamarket/crema_de_cannabis_5.png",
+    src: "bocetos/paginas web/Kannamarket/crema_de_cannabis_5.png",
     desc: "Variación de producto para catálogo de belleza y salud dermatológica.",
     aspect: "square"
   },
   {
     title: "Tintura Medicinal — Aceite Concentrado CBD #3",
     categoryName: "E-Commerce / Aceites",
-    src: "bocetos/Kannamarket/cbd_aceite_salud_3.png",
+    src: "bocetos/paginas web/Kannamarket/cbd_aceite_salud_3.png",
     desc: "Gotero sublingual de alta pureza con especificaciones técnicas en tienda.",
     aspect: "square"
   },
   {
     title: "Tintura Medicinal — Aceite Concentrado CBD #2",
     categoryName: "E-Commerce / Aceites",
-    src: "bocetos/Kannamarket/cbd_aceite_salud_2.png",
+    src: "bocetos/paginas web/Kannamarket/cbd_aceite_salud_2.png",
     desc: "Presentación alternativa de concentrado para dosificación progresiva.",
     aspect: "square"
   },
   {
     title: "Canal de Conversión Directa (WhatsApp CTA)",
     categoryName: "E-Commerce / Conversión",
-    src: "bocetos/Kannamarket/whatsapp_link.png",
+    src: "bocetos/paginas web/Kannamarket/whatsapp_link.png",
     desc: "Botón y widget de compra asistida directa para convertir tráfico web en ventas inmediatas.",
     aspect: "wide"
+  }
+];
+
+// 3. Datos de LOGOS & IDENTIDAD VISUAL
+const logosItems = [
+  {
+    title: "Logo Finix — Identidad para Aplicación Móvil",
+    categoryName: "Diseño de Marca & App",
+    src: "bocetos/logos/Logo Finix.jpg",
+    desc: "Diseño de identidad visual y logotipo para la aplicación Finix. Concepto moderno, dinámico y geométrico con isotipo memorable adaptado para icono de app e interfaces digitales.",
+    aspect: "square"
+  },
+  {
+    title: "Logo CafeExanet — Identidad Corporativa Café Internet",
+    categoryName: "Diseño de Marca & Negocio",
+    src: "bocetos/logos/Logo CafeExanet.jpg",
+    desc: "Identidad visual y logotipo diseñado para café internet y centro de conectividad tecnológica CafeExanet. Combina elementos tecnológicos y de servicio al cliente con una paleta llamativa.",
+    aspect: "square"
   }
 ];
 
@@ -189,7 +207,7 @@ function renderGrid(containerId, itemsList) {
   });
 }
 
-// Selector de subcarpetas (Tabs)
+// Selector de subcarpetas (Tabs) para Páginas Web (Kupi / Kannamarket)
 const tabKupi = document.getElementById("tabKupi");
 const tabKannamarket = document.getElementById("tabKannamarket");
 const viewKupi = document.getElementById("viewKupi");
@@ -209,8 +227,10 @@ function switchTab(tab) {
   }
 }
 
-tabKupi.addEventListener("click", () => switchTab("kupi"));
-tabKannamarket.addEventListener("click", () => switchTab("kannamarket"));
+if (tabKupi && tabKannamarket) {
+  tabKupi.addEventListener("click", () => switchTab("kupi"));
+  tabKannamarket.addEventListener("click", () => switchTab("kannamarket"));
+}
 
 // Lightbox / Modal
 const modal = document.getElementById("lightboxModal");
@@ -275,4 +295,5 @@ document.addEventListener("keydown", (e) => {
 document.addEventListener("DOMContentLoaded", () => {
   renderGrid("kupiGrid", kupiItems);
   renderGrid("kannaGrid", kannaItems);
+  renderGrid("logosGrid", logosItems);
 });
