@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="es-ES">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2018.1.1.386"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <script type="text/javascript">
+   // Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "require.js", "webpro.js", "nosotros.css"], "outOfDate":[]};
+</script>
+  
+  <title>Nosotros</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
+  <link rel="stylesheet" type="text/css" href="css/master_a-p_g_-maestra-_no-inicio_.css?crc=46704947"/>
+  <link rel="stylesheet" type="text/css" href="css/nosotros.css?crc=137538443" id="pagesheet"/>
+  <!-- JS includes -->
+  <!--[if lt IE 9]>
+  <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
+  <![endif]-->
+   </head>
+ <body>
+
+  <div class="clearfix borderbox" id="page"><!-- group -->
+   <div class="clearfix grpelem" id="ppu467"><!-- column -->
+    <div class="clearfix colelem" id="pu467"><!-- group -->
+     <div class="clip_frame grpelem" id="u467"><!-- image -->
+      <img class="block" id="u467_img" src="images/logo%20kannamarket.png?crc=3801568139" alt="" data-heightwidthratio="0.6813186813186813" data-image-width="91" data-image-height="62"/>
+     </div>
+     <nav class="MenuBar clearfix grpelem" id="menuu190"><!-- horizontal box -->
+      <div class="MenuItemContainer clearfix grpelem" id="u198"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u199" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u202-4"><!-- content --><p>Inicio</p></div></a>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u191"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u194" href="productos.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u197-4"><!-- content --><p>Productos</p></div><div class="grpelem" id="u195"><!-- content --></div></a>
+       <div class="SubMenu MenuLevel1 clearfix" id="u192"><!-- vertical box -->
+        <ul class="SubMenuView clearfix colelem" id="u193"><!-- vertical box -->
+         <li class="MenuItemContainer clearfix colelem" id="u3237"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u3239" href="novedades.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3243-4"><!-- content --><div id="u3243-3"><p>Novedades</p></div></div></a></li>
+         <li class="MenuItemContainer clearfix colelem" id="u3258"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u3261" href="ofertas.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3262-4"><!-- content --><div id="u3262-3"><p>Ofertas</p></div></div></a></li>
+         <li class="MenuItemContainer clearfix colelem" id="u3279"><!-- horizontal box --><a class="nonblock nontext MenuItem MenuItemWithSubMenu clearfix grpelem" id="u3282" href="mas-vendidos.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u3283-4"><!-- content --><div id="u3283-3"><p>Mas vendidos</p></div></div></a></li>
+        </ul>
+       </div>
+      </div>
+      <div class="MenuItemContainer clearfix grpelem" id="u236"><!-- vertical box -->
+       <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem" id="u239" href="nosotros.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap clearfix grpelem" id="u240-4"><!-- content --><p>Nosotros</p></div></a>
+      </div>
+     </nav>
+     <a class="nonblock nontext clip_frame grpelem" id="u2537" href="inicio-sesion.html"><!-- image --><img class="block" id="u2537_img" src="images/1827504.png?crc=258168644" alt="" title="Notificaciones por leer" data-heightwidthratio="1" data-image-width="27" data-image-height="27"/></a>
+     <a class="nonblock nontext clip_frame grpelem" id="u1700" href="inicio-sesion.html"><!-- image --><img class="block" id="u1700_img" src="images/263142.png?crc=4073066833" alt="" data-heightwidthratio="1" data-image-width="31" data-image-height="31"/></a>
+     <a class="nonblock nontext clip_frame grpelem" id="u1678" href="inicio-sesion.html"><!-- image --><img class="block" id="u1678_img" src="images/my-account-login.png?crc=130870292" alt="" data-heightwidthratio="1" data-image-width="32" data-image-height="32"/></a>
+    </div>
+    <div class="clearfix colelem" id="u2557"><!-- group -->
+     <div class="clip_frame grpelem" id="u2558"><!-- image -->
+      <img class="block" id="u2558_img" src="images/captura%20de%20pantalla%202024-06-06%20161926-crop-u2558.jpg?crc=84961699" alt="" data-heightwidthratio="0.053440702781844804" data-image-width="1366" data-image-height="73"/>
+     </div>
+     <div class="Button clearfix grpelem" id="buttonu2560" data-visibility="changed" style="visibility:hidden"><!-- container box -->
+      <div class="clearfix grpelem" id="u2561-4"><!-- content -->
+       <p>Búsqueda</p>
+      </div>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="ppu3095"><!-- group -->
+     <div class="clearfix grpelem" id="pu3095"><!-- column -->
+      <div class="clearfix colelem" id="u3095"><!-- group -->
+       <div class="clearfix grpelem" id="u3059-4"><!-- content -->
+        <h1>Acerca de Nosotros</h1>
+       </div>
+      </div>
+      <div class="clearfix colelem" id="u3062-54"><!-- content -->
+       <p>Somos una empresa comprometida con el bienestar y la salud de nuestros clientes. Creemos en el poder de la naturaleza y en la ciencia que respalda sus beneficios. Por eso, hemos decidido centrar nuestros esfuerzos en la creación de productos a base de CBD, un compuesto natural con propiedades terapéuticas comprobadas.</p>
+       <p>&nbsp;</p>
+       <p>El CBD, o cannabidiol, es una sustancia química que se encuentra en la planta de cannabis. A diferencia del THC, el CBD no tiene efectos psicoactivos, lo que significa que no produce un &quot;colocón&quot;. En cambio, se ha demostrado que el CBD tiene una serie de beneficios para la salud.</p>
+       <p>&nbsp;</p>
+       <p>Nuestros productos de CBD están diseñados para aliviar una variedad de síntomas y mejorar la calidad de vida de nuestros clientes. Algunos de los beneficios más notables del CBD incluyen:</p>
+       <p>&nbsp;</p>
+       <p>-<span id="u3062-11"> </span><span id="u3062-12">Alivio del dolor y la inflamación: </span>El CBD tiene propiedades antiinflamatorias que pueden ayudar a aliviar el dolor crónico y la inflamación.</p>
+       <p>- <span id="u3062-16">Salud mental y bienestar:</span> Se ha demostrado que el CBD ayuda a reducir la ansiedad y la depresión, y puede ser beneficioso para las personas que sufren de insomnio.</p>
+       <p>- <span id="u3062-20">Salud de la piel:</span><span id="u3062-21"> </span>Gracias a sus propiedades antiinflamatorias, el CBD puede tener efectos beneficiosos sobre el acné y otras afecciones de la piel.</p>
+       <p>- <span id="u3062-25">Protección del cerebro: </span><span id="u3062-26">El</span><span id="u3062-27"> </span>CBD puede tener propiedades neuroprotectoras.</p>
+       <p>- <span id="u3062-31">Función digestiva:</span><span id="u3062-32"> </span>El CBD puede ayudar a mejorar la salud digestiva.</p>
+       <p>- <span id="u3062-36">Salud cardiovascular:</span> El CBD puede tener beneficios para la salud cardiovascular.</p>
+       <p>- <span id="u3062-40">Salud reproductiva:</span> El CBD puede ayudar a mejorar la salud reproductiva.</p>
+       <p>- <span id="u3062-44">Regulación de las hormonas y el metabolismo: </span>El CBD puede ayudar a regular las hormonas y el metabolismo.</p>
+       <p>&nbsp;</p>
+       <p>Estamos emocionados de compartir estos beneficios con nuestros clientes a través de nuestros productos de alta calidad. Cada uno de nuestros productos está formulado con el máximo cuidado y atención al detalle, para garantizar que nuestros clientes reciban los mejores beneficios posibles del CBD.</p>
+       <p>&nbsp;</p>
+       <p>Esperamos que te unas a nosotros en este viaje hacia una vida más saludable y feliz con el poder del CBD. ¡Bienvenido a nuestra familia!</p>
+      </div>
+     </div>
+     <div class="clip_frame grpelem" id="u3086" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+      <img class="block" id="u3086_img" src="images/imagen%20pegada%201024x1024.jpg?crc=100224116" alt="" width="564" height="564"/>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu3077"><!-- group -->
+     <div class="clip_frame grpelem" id="u3077" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+      <img class="block" id="u3077_img" src="images/imagen%20pegada%201024x10242.jpg?crc=338965210" alt="" width="495" height="495"/>
+     </div>
+     <div class="clearfix grpelem" id="pu3099"><!-- column -->
+      <div class="clearfix colelem" id="u3099"><!-- group -->
+       <div class="clearfix grpelem" id="u3074-4"><!-- content -->
+        <h1>Que Hacemos</h1>
+       </div>
+      </div>
+      <div class="clearfix colelem" id="u3071-42"><!-- content -->
+       <p>Nos dedicamos a la creación y distribución de productos de alta calidad a base de CBD, diseñados para mejorar tu bienestar y estilo de vida. Nuestra gama de productos incluye:</p>
+       <p>&nbsp;</p>
+       <p>- <span id="u3071-5">Cremas Faciales y Corporales: </span>Enriquecidas con CBD, nuestras cremas hidratan y rejuvenecen la piel, dejándola suave y radiante.</p>
+       <p>- <span id="u3071-9">Mascarillas: </span>Formuladas para purificar y nutrir la piel, nuestras mascarillas a base de CBD ofrecen una experiencia de spa en casa.</p>
+       <p>- <span id="u3071-13">Loción: </span>Nuestra loción de CBD calma y alivia la piel, proporcionando una sensación de confort inmediato.</p>
+       <p>- Desodorante: Con ingredientes naturales y CBD, nuestro desodorante garantiza frescura y protección durante todo el día.</p>
+       <p>- <span id="u3071-19">Shampoo y Cera para Cabello: </span>Cuida tu cabello con nuestros productos fortificados con CBD, que promueven un cabello fuerte y saludable.</p>
+       <p>- <span id="u3071-23">Gel y Pomadas: </span>Perfectos para estilizar tu cabello mientras lo tratas con las bondades del CBD.</p>
+       <p>- <span id="u3071-27">Parches Transdérmicos: </span>Una forma innovadora de recibir los beneficios del CBD a través de la piel, de manera continua y efectiva.</p>
+       <p>- <span id="u3071-31">Suplementos y Vitaminas:</span> Potencia tu salud con nuestros suplementos y vitaminas infundidos con CBD, que apoyan tu bienestar general.</p>
+       <p>- <span id="u3071-35">Alimentos, Chocolates y Bebidas:</span> Disfruta de una deliciosa selección de alimentos y bebidas enriquecidos con CBD, perfectos para integrar en tu rutina diaria.</p>
+       <p>&nbsp;</p>
+       <p>Cada producto es el resultado de una investigación exhaustiva y está fabricado con los más altos estándares de calidad. Nos enorgullecemos de ofrecer soluciones innovadoras que contribuyen a una vida más saludable y equilibrada.</p>
+      </div>
+     </div>
+    </div>
+    <div class="browser_width colelem" id="u3117-bw">
+     <div id="u3117"><!-- group -->
+      <div class="clearfix" id="u3117_align_to_page">
+       <div class="clearfix grpelem" id="u3118-4"><!-- content -->
+        <h1>¡Contacta ahora con nosotros!</h1>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="u3175-4"><!-- content -->
+     <p>Será un gusto atenderte, deja tus datos y pronto estaremos en contacto contigo.</p>
+    </div>
+    <form class="form-grp clearfix colelem" id="widgetu3123" method="post" enctype="multipart/form-data" action="scripts/form-u3123.php" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- none box -->
+     <div class="position_content" id="widgetu3123_position_content">
+      <div class="fld-grp clearfix colelem" id="widgetu3136" data-required="true" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- none box -->
+       <label class="fld-label actAsDiv clearfix colelem" id="u3139-4" for="widgetu3136_input"><!-- content --><span class="actAsPara">Nombre:</span></label>
+       <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u3137-4"><!-- content --><div id="u3137-3"><input class="wrapped-input" type="text" spellcheck="false" id="widgetu3136_input" name="custom_U3136" tabindex="1"/><label class="wrapped-input fld-prompt" id="widgetu3136_prompt" for="widgetu3136_input"><span class="actAsPara">Introducir nombre</span></label></div></span>
+      </div>
+      <div class="fld-grp clearfix colelem" id="widgetu3124" data-required="true" data-type="email" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- none box -->
+       <label class="fld-label actAsDiv clearfix colelem" id="u3125-4" for="widgetu3124_input"><!-- content --><span class="actAsPara">Correo electrónico:</span></label>
+       <span class="fld-input NoWrap actAsDiv clearfix colelem" id="u3126-4"><!-- content --><div id="u3126-3"><input class="wrapped-input" type="email" spellcheck="false" id="widgetu3124_input" name="Email" tabindex="2"/><label class="wrapped-input fld-prompt" id="widgetu3124_prompt" for="widgetu3124_input"><span class="actAsPara">Introducir correo electrónico.</span></label></div></span>
+      </div>
+      <div class="fld-grp clearfix colelem" id="widgetu3130" data-required="false" data-sizePolicy="fluidWidth" data-pintopage="page_fluidx"><!-- none box -->
+       <label class="fld-label actAsDiv clearfix colelem" id="u3133-4" for="widgetu3130_input"><!-- content --><span class="actAsPara">Mensaje:</span></label>
+       <span class="fld-textarea actAsDiv clearfix colelem" id="u3131-4"><!-- content --><div id="u3131-3"><textarea class="wrapped-input" id="widgetu3130_input" name="custom_U3130" tabindex="3"></textarea><label class="wrapped-input fld-prompt" id="widgetu3130_prompt" for="widgetu3130_input"><span class="actAsPara">Escriba su mensaje</span></label></div></span>
+      </div>
+      <div class="clearfix colelem" id="pu3128-4"><!-- group -->
+       <div class="clearfix grpelem" id="u3128-4"><!-- content -->
+        <p>Enviando formulario...</p>
+       </div>
+       <div class="clearfix grpelem" id="u3134-4"><!-- content -->
+        <p>El servidor ha detectado un error.</p>
+       </div>
+       <div class="clearfix grpelem" id="u3129-4"><!-- content -->
+        <p>Formulario recibido.</p>
+       </div>
+       <button class="submit-btn NoWrap rounded-corners clearfix grpelem" id="u3135-4" type="submit" value="Enviar" tabindex="4"><!-- content -->
+        <div style="margin-top:-12px;height:12px;">
+         <p>Enviar</p>
+        </div>
+       </button>
+      </div>
+     </div>
+    </form>
+   </div>
+   <div class="verticalspacer" data-offset-top="1719" data-content-above-spacer="1719" data-content-below-spacer="258" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+   <div class="clearfix grpelem" id="pu1617"><!-- column -->
+    <div class="colelem" id="u1617"><!-- custom html -->
+     "<link rel="shorcut icon" type="image/x-icon" href="favicon.ico">
+    </div>
+    <div class="clearfix colelem" id="pu1574-4"><!-- group -->
+     <div class="browser_width grpelem" id="u1574-4-bw">
+      <div class="clearfix" id="u1574-4"><!-- content -->
+       <p>I</p>
+      </div>
+     </div>
+     <div class="clearfix grpelem" id="u1580-10"><!-- content -->
+      <p id="u1580-2">Información de la empresa</p>
+      <p id="u1580-3">&nbsp;</p>
+      <p id="u1580-5">Acerca de Kannamarket</p>
+      <p id="u1580-6">&nbsp;</p>
+      <p id="u1580-8">Contactanos</p>
+     </div>
+     <div class="clearfix grpelem" id="u1592-13"><!-- content -->
+      <p id="u1592-2">Atención al Cliente</p>
+      <p id="u1592-3">&nbsp;</p>
+      <p id="u1592-5">Politica de devolución y reembolso</p>
+      <p id="u1592-6">&nbsp;</p>
+      <p id="u1592-8">Politica de envíos</p>
+      <p id="u1592-9">&nbsp;</p>
+      <p id="u1592-11">Reportar actividad sospechosa</p>
+     </div>
+     <div class="clearfix grpelem" id="u1595-13"><!-- content -->
+      <p id="u1595-2">Ayuda</p>
+      <p id="u1595-3">&nbsp;</p>
+      <p id="u1595-5">Centro de ayuda y preguntas frecuentes</p>
+      <p id="u1595-6">&nbsp;</p>
+      <p id="u1595-8">Protección de compras en Kannarket</p>
+      <p id="u1595-9">&nbsp;</p>
+      <p id="u1595-11">Asociate a Kannamarket</p>
+     </div>
+     <div class="clearfix grpelem" id="u1598-13"><!-- content -->
+      <p id="u1598-2">Kannamarket</p>
+      <p id="u1598-3">&nbsp;</p>
+      <p id="u1598-5">Ofertas Exclusivas</p>
+      <p id="u1598-6">&nbsp;</p>
+      <p id="u1598-8">Alerta de cupones y ofertas</p>
+      <p id="u1598-9">&nbsp;</p>
+      <p id="u1598-11">Alerta de pedidos con poco stock</p>
+     </div>
+     <div class="clearfix grpelem" id="u2162"><!-- group -->
+      <div class="clearfix grpelem" id="u1601-12"><!-- content -->
+       <p id="u1601-2">Conectar con Kannamarket</p>
+       <p id="u1601-3">&nbsp;</p>
+       <p id="u1601-4">&nbsp;</p>
+       <p id="u1601-5">&nbsp;</p>
+       <p id="u1601-6">&nbsp;</p>
+       <p id="u1601-7">&nbsp;</p>
+       <p id="u1601-8">&nbsp;</p>
+       <p id="u1601-9">&nbsp;</p>
+       <p id="u1601-10">&nbsp;</p>
+      </div>
+      <div class="clip_frame grpelem" id="u1604"><!-- image -->
+       <img class="block" id="u1604_img" src="images/captura_de_pantalla_2024-06-04_222847-removebg-preview%202.png?crc=4096416517" alt="" data-heightwidthratio="0.6608695652173913" data-image-width="115" data-image-height="76"/>
+      </div>
+      <div class="clip_frame grpelem" id="u2152"><!-- image -->
+       <img class="block" id="u2152_img" src="images/whatsapp_link.png?crc=3900323141" alt="" data-heightwidthratio="0.34868421052631576" data-image-width="152" data-image-height="53"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   // Decide whether to suppress missing file error or not based on preference setting
+var suppressMissingFileError = false
+</script>
+  <script type="text/javascript">
+   window.Muse.assets.check=function(c){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},d=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},f=function(f){for(var g=document.getElementsByTagName("link"),j=0;j<g.length;j++)if("text/css"==g[j].type){var l=(g[j].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!l||!l[1]||!l[2])break;b[l[1]]=l[2]}g=document.createElement("div");g.className="version";g.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(g);for(j=0;j<Muse.assets.required.length;){var l=Muse.assets.required[j],k=l.match(/([\w\-\.]+)\.(\w+)$/),i=k&&k[1]?
+k[1]:null,k=k&&k[2]?k[2]:null;switch(k.toLowerCase()){case "css":i=i.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");g.className+=" "+i;i=a(d(g,"color"));k=a(d(g,"backgroundColor"));i!=0||k!=0?(Muse.assets.required.splice(j,1),"undefined"!=typeof b[l]&&(i!=b[l]>>>24||k!=(b[l]&16777215))&&Muse.assets.outOfDate.push(l)):j++;g.className="version";break;case "js":j++;break;default:throw Error("Unsupported file type: "+k);}}c?c().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+g.parentNode.removeChild(g);if(Muse.assets.outOfDate.length||Muse.assets.required.length)g="Puede que determinados archivos falten en el servidor o sean incorrectos. Limpie la cache del navegador e inténtelo de nuevo. Si el problema persiste, póngase en contacto con el administrador del sitio web.",f&&Muse.assets.outOfDate.length&&(g+="\nOut of date: "+Muse.assets.outOfDate.join(",")),f&&Muse.assets.required.length&&(g+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(g+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(g)):alert(g)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
+setTimeout(function(){f(!0)},5E3):f()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musemenu","jquery.watch","webpro"],function(c){var $ = c;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
+Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
+Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+Muse.Utils.initWidget('#widgetu3123', ['#bp_infinity'], function(elem) { return new WebPro.Widget.Form(elem, {validationEvent:'submit',errorStateSensitivity:'high',fieldWrapperClass:'fld-grp',formSubmittedClass:'frm-sub-st',formErrorClass:'frm-subm-err-st',formDeliveredClass:'frm-subm-ok-st',notEmptyClass:'non-empty-st',focusClass:'focus-st',invalidClass:'fld-err-st',requiredClass:'fld-err-st',ajaxSubmit:true}); });/* #widgetu3123 */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=4177726516" type="text/javascript" async data-main="scripts/museconfig.js?crc=3936894949" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+   </body>
+</html>

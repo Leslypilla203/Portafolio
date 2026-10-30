@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio Creativo | UI/UX & Diseño Web</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-dot"></span> Portafolio Creativo
+    </a>
+    <ul class="nav-links">
+      <li><a href="#carpetas" class="active">Colecciones</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="https://leslypilla203.github.io/kannamarket/" target="_blank" rel="noopener">Kanna Market Live ↗</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="badge">
+      <span class="badge-icon">✦</span> UI/UX Designer & Frontend Developer
+    </div>
+    <h1>Diseño de Interfaces & <span class="gradient">Experiencias Digitales</span></h1>
+    <p>
+      Diseño de productos digitales centrado en el usuario, interfaces móviles de alto impacto y plataformas e-commerce concebidas para transformar marcas y escalar negocios.
+    </p>
+  </section>
+
+  <main class="container">
+    
+    <!-- SECCIÓN CARPETA PRINCIPAL: DISEÑO DE INTERFACES Y PÁGINAS WEB -->
+    <section class="category-folder" id="carpetas">
+      <div class="folder-header">
+        <div class="folder-icon">📁</div>
+        <div>
+          <span class="folder-sub">Colección Principal</span>
+          <h2 class="folder-title">Diseño de Interfaces & Páginas Web</h2>
+          <p class="folder-description">
+            Explora las subcarpetas de proyectos donde combinamos arquitectura de información, diseño visual y flujos interactivos.
+          </p>
+        </div>
+      </div>
+
+      <!-- Selector de Subcarpetas (Pestañas estilo OS / Archivos) -->
+      <div class="subfolders-grid">
+        <!-- Subcarpeta 1: KUPI -->
+        <div class="subfolder-card active" data-tab="kupi" id="tabKupi">
+          <div class="subfolder-top">
+            <span class="subfolder-badge app">Mobile UI/UX</span>
+            <span class="subfolder-count">12 Pantallas</span>
+          </div>
+          <h3 class="subfolder-name">📱 KUPI App</h3>
+          <p class="subfolder-role">Proyecto con el equipo de San Juanito S.A.S</p>
+          <div class="subfolder-indicator">Ver proyecto ➔</div>
+        </div>
+
+        <!-- Subcarpeta 2: KANNAMARKET -->
+        <div class="subfolder-card" data-tab="kannamarket" id="tabKannamarket">
+          <div class="subfolder-top">
+            <span class="subfolder-badge web">E-Commerce Web</span>
+            <span class="subfolder-count">Web & Catálogo</span>
+          </div>
+          <h3 class="subfolder-name">🌿 Kanna Market</h3>
+          <p class="subfolder-role">Expansión E-Commerce para Microempresa</p>
+          <div class="subfolder-indicator">Ver proyecto ➔</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETALLE DEL PROYECTO SELECCIONADO (DINÁMICO) -->
+    <section class="project-showcase" id="proyectos">
+      
+      <!-- CONTENIDO PROYECTO 1: KUPI -->
+      <div class="project-view active" id="viewKupi">
+        <div class="project-banner">
+          <div class="project-meta">
+            <span class="pill-tag">Diseño de Interfaz Móvil & UX</span>
+            <h2>Kupi — Plataforma Móvil & Ecosistema Digital</h2>
+            <p class="pitch-text">
+              Participé activamente junto al equipo multidisciplinario de <strong>San Juanito S.A.S</strong> en el diseño de interfaces y experiencia de usuario (UI/UX) para <strong>Kupi</strong>. 
+              El objetivo principal fue conceptualizar y estructurar una interfaz limpia, moderna y altamente intuitiva, optimizando los flujos de navegación, la jerarquía visual de datos y la interacción táctil en dispositivos móviles para ofrecer una experiencia fluida y atractiva al usuario final.
+            </p>
+            <div class="tech-tags">
+              <span>Figma / SVG Vectorial</span>
+              <span>Design System</span>
+              <span>Mobile Architecture</span>
+              <span>Flujos de Usuario</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Galería de pantallas de Kupi -->
+        <div class="section-divider">
+          <h3>Pantallas y Vistas del Sistema</h3>
+          <span>Haz clic en cualquier pantalla para verla ampliada</span>
+        </div>
+        <div class="gallery-grid" id="kupiGrid"></div>
+      </div>
+
+      <!-- CONTENIDO PROYECTO 2: KANNAMARKET -->
+      <div class="project-view" id="viewKannamarket">
+        <div class="project-banner">
+          <div class="project-meta">
+            <span class="pill-tag green">E-Commerce & Transformación Digital</span>
+            <h2>Kanna Market — Plataforma de Comercio Electrónico</h2>
+            <p class="pitch-text">
+              Proyecto de diseño y desarrollo web enfocado en la transformación digital de una microempresa, facilitando su expansión comercial hacia el modelo <strong>E-Commerce</strong>. 
+              Se diseñó una plataforma enfocada en la conversión, con catálogo interactivo de productos naturales y CBD, banners promocionales de impacto, navegación organizada por categorías, módulos de ofertas y canal de atención directa e instantánea vía WhatsApp para maximizar las ventas y fidelizar a los clientes.
+            </p>
+            <div class="tech-tags">
+              <span>E-Commerce Design</span>
+              <span>Catálogo Interactivo</span>
+              <span>Conversión & WhatsApp Integration</span>
+              <span>Web Responsive</span>
+            </div>
+            
+            <div class="live-action-box">
+              <a href="https://leslypilla203.github.io/kannamarket/" target="_blank" rel="noopener" class="btn-live">
+                <span>Visitar Sitio Web en Vivo</span> ↗
+              </a>
+              <span class="live-note">URL oficial alojada en GitHub Pages</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Galería de vistas y productos de Kanna Market -->
+        <div class="section-divider">
+          <h3>Estructura Visual, Productos y Branding</h3>
+          <span>Explora los módulos, catálogo de productos y elementos gráficos</span>
+        </div>
+        <div class="gallery-grid" id="kannaGrid"></div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Modal / Lightbox -->
+  <div class="modal" id="lightboxModal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal" aria-label="Cerrar modal">&times;</button>
+      <button class="modal-nav modal-prev" id="prevModal" aria-label="Anterior">&#10094;</button>
+      <button class="modal-nav modal-next" id="nextModal" aria-label="Siguiente">&#10095;</button>
+      
+      <div class="modal-img-container">
+        <img id="modalImg" src="" alt="Vista previa">
+      </div>
+      
+      <div class="modal-info">
+        <p id="modalCategory"></p>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Portafolio Creativo — Diseñado con dedicación y enfoque profesional.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
