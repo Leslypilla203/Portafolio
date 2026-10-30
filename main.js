@@ -86,69 +86,41 @@ const kupiItems = [
   }
 ];
 
-// 2. Datos de KANNA MARKET
+// 2. Datos de KANNA MARKET (Flujo E-Commerce Completo)
 const kannaItems = [
   {
-    title: "Identidad Visual & Logotipo Kanna Market",
-    categoryName: "Branding & Web",
-    src: "bocetos/paginas web/Kannamarket/logo_kannamarket.png",
-    desc: "Diseño de identidad corporativa y logotipo adaptado para cabecera e interfaces responsive.",
+    title: "01. Pantalla de Inicio (Home)",
+    categoryName: "E-Commerce / Landing",
+    src: "bocetos/paginas web/Kannamarket/01_inicio_home.jpg",
+    desc: "Primera impresión visual del usuario al ingresar a la plataforma. Incluye barra de búsqueda principal, navegación superior, logotipo de marca y banner promocional 'Dos es mejor que uno (2x1)' enfocado en captación inmediata.",
     aspect: "wide"
   },
   {
-    title: "Catálogo Online — Gotas CBD Mascotas",
-    categoryName: "E-Commerce / Producto",
-    src: "bocetos/paginas web/Kannamarket/cbd_gotas_perros_1(1)-crop-u2921.png",
-    desc: "Fotografía y tarjeta de producto optimizada para e-commerce en la categoría veterinaria.",
-    aspect: "square"
+    title: "02. Catálogo & Novedades",
+    categoryName: "E-Commerce / Exploración",
+    src: "bocetos/paginas web/Kannamarket/02_catalogo_novedades.jpg",
+    desc: "Sección de productos recién llegados organizada con filtros segmentados por público ('Para Mí' y 'Para Mi Mascota'). Cuadrícula de tarjetas con previsualización, categorización limpia y valores en pesos colombianos.",
+    aspect: "wide"
   },
   {
-    title: "Línea Terapéutica — Pomada CBD Salud",
-    categoryName: "E-Commerce / Producto",
-    src: "bocetos/paginas web/Kannamarket/cbd_pomada_salud_1-crop-u1067.png",
-    desc: "Presentación de producto con enfoque clínico y bienestar corporal.",
-    aspect: "square"
-  },
-  {
-    title: "Suplementos — Vitaminas CBD Salud",
-    categoryName: "E-Commerce / Producto",
-    src: "bocetos/paginas web/Kannamarket/cbd_vitamina_salud_2-crop-u1074.png",
-    desc: "Ficha gráfica de suplementación y vitaminas enriquecidas con CBD.",
-    aspect: "square"
-  },
-  {
-    title: "Cosmética Natural — Crema Corporal 14",
-    categoryName: "E-Commerce / Cosmética",
-    src: "bocetos/paginas web/Kannamarket/crema_de_cannabis_14.png",
-    desc: "Renderizado y exhibición de línea cosmética para el cuidado de la piel.",
-    aspect: "square"
-  },
-  {
-    title: "Cosmética Natural — Crema Hidratante 5",
-    categoryName: "E-Commerce / Cosmética",
-    src: "bocetos/paginas web/Kannamarket/crema_de_cannabis_5.png",
-    desc: "Variación de producto para catálogo de belleza y salud dermatológica.",
-    aspect: "square"
-  },
-  {
-    title: "Tintura Medicinal — Aceite Concentrado CBD #3",
-    categoryName: "E-Commerce / Aceites",
-    src: "bocetos/paginas web/Kannamarket/cbd_aceite_salud_3.png",
-    desc: "Gotero sublingual de alta pureza con especificaciones técnicas en tienda.",
-    aspect: "square"
-  },
-  {
-    title: "Tintura Medicinal — Aceite Concentrado CBD #2",
-    categoryName: "E-Commerce / Aceites",
-    src: "bocetos/paginas web/Kannamarket/cbd_aceite_salud_2.png",
-    desc: "Presentación alternativa de concentrado para dosificación progresiva.",
-    aspect: "square"
-  },
-  {
-    title: "Canal de Conversión Directa (WhatsApp CTA)",
+    title: "03. Ficha Detallada del Producto",
     categoryName: "E-Commerce / Conversión",
-    src: "bocetos/paginas web/Kannamarket/whatsapp_link.png",
-    desc: "Botón y widget de compra asistida directa para convertir tráfico web en ventas inmediatas.",
+    src: "bocetos/paginas web/Kannamarket/03_detalle_producto.jpg",
+    desc: "Vista individual del artículo seleccionado. Presenta galería fotográfica interactiva, valoración en estrellas (rating), descripción de beneficios y propiedades, disponibilidad de stock, selector de cantidad y botones de compra directa o agregar al carrito.",
+    aspect: "wide"
+  },
+  {
+    title: "04. Carrito de Compras & Checkout",
+    categoryName: "E-Commerce / Checkout",
+    src: "bocetos/paginas web/Kannamarket/04_carrito_compras.jpg",
+    desc: "Panel de gestión de pedidos donde el cliente visualiza el desglose de productos seleccionados, subtotales, opción de eliminar ítems, cálculo automático del total y múltiples pasarelas de pago integradas (Mastercard, Visa, PayPal, PSE, GPay, etc.).",
+    aspect: "wide"
+  },
+  {
+    title: "05. Portal de Acceso & Registro (Login)",
+    categoryName: "E-Commerce / Autenticación",
+    src: "bocetos/paginas web/Kannamarket/05_inicio_sesion.png",
+    desc: "Módulo de autenticación y registro de clientes. Diseñado para ofrecer una experiencia de usuario personalizada, guardar historial de pedidos, favoritos y agilizar futuras compras de forma segura.",
     aspect: "wide"
   }
 ];
