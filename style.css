@@ -479,6 +479,123 @@ body {
 }
 
 /* =========================================================================
+   OBRA SERIAL: “UNA MEMORIA QUE SE TRANSFORMA”
+   ========================================================================= */
+.serial-work-container {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.serial-work-header {
+  margin-bottom: 2.25rem;
+  max-width: 950px;
+}
+
+.pill-tag.purple {
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  color: #c4b5fd;
+}
+
+.serial-main-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0.5rem 0 1rem;
+  letter-spacing: -0.5px;
+}
+
+.serial-main-desc {
+  font-size: 1.05rem;
+  color: #cbd5e1;
+  line-height: 1.75;
+}
+
+.serial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.serial-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.serial-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-glow);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 240, 255, 0.2);
+}
+
+.serial-img-wrapper {
+  background: #0f172a;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0.75rem;
+}
+
+.serial-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.35s ease;
+}
+
+.serial-card:hover .serial-img-wrapper img {
+  transform: scale(1.05);
+}
+
+.serial-card-info {
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.serial-card-stage {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.serial-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+
+.serial-card-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* =========================================================================
    CUADROS COMPARATIVOS: BOCETO A LÁPIZ VS ILUSTRACIÓN DIGITAL
    ========================================================================= */
 .comparison-list {

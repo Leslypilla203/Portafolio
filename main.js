@@ -143,7 +143,39 @@ const logosItems = [
   }
 ];
 
-// 4. Datos de DISEÑOS & PERSONAJES (Cuadros Comparativos: Boceto a lápiz vs Ilustración Digital)
+// 4. Datos de OBRA SERIAL: “UNA MEMORIA QUE SE TRANSFORMA”
+const serialWorks = [
+  {
+    stage: "Etapa 1 / 4 — Origen & Estabilidad",
+    title: "La Silla Quieta",
+    categoryName: "Obra Serial / Ilustración Digital",
+    src: "bocetos/diseños/Ilustraciones/Obra serial_Una Memoria Que Se Transforma/Silla Quieta.jpg",
+    desc: "Esta obra es el punto de partida de la serie: la silla tal y como es, sin intervenciones ni transformaciones. Representa la memoria, el origen y el objeto que acompaña mi historia personal. La quietud simboliza estabilidad, infancia y el estado inicial antes del cambio. Es la silla que conserva las marcas del tiempo, recordando afectos y momentos que forman parte del crecimiento."
+  },
+  {
+    stage: "Etapa 2 / 4 — Movimiento & Transición",
+    title: "La Silla Dinámica",
+    categoryName: "Obra Serial / Ilustración Digital",
+    src: "bocetos/diseños/Ilustraciones/Obra serial_Una Memoria Que Se Transforma/Silla Dinamica.jpg",
+    desc: "Aquí la silla deja de ser un objeto estático y se convierte en un cuerpo en movimiento. La perspectiva inclinada produce la sensación de que está cayendo, girando o flotando. Esta obra refleja las etapas donde la vida deja de ser estable y ocurre una transición: dudas, búsquedas, decisiones y giros inesperados. Es la parte de la historia donde se experimenta el cambio y se cuestiona la estructura que antes parecía firme."
+  },
+  {
+    stage: "Etapa 3 / 4 — Quiebre & Rupturas Internas",
+    title: "La Silla Fragmentada",
+    categoryName: "Obra Serial / Ilustración Digital",
+    src: "bocetos/diseños/Ilustraciones/Obra serial_Una Memoria Que Se Transforma/Silla Fragmentada.jpg",
+    desc: "La silla aparece rota en piezas triangulares, como un espejo que ha estallado. Cada fragmento muestra una parte diferente, como si la memoria estuviera dispersa. Esta obra representa las rupturas internas, los duelos, las heridas, las partes de la historia que se quebraron. Sin embargo, también sugiere que todo fragmento conserva un valor, una versión distinta de lo que fuimos. No es destrucción: es relectura, reconstrucción, entender cómo las partes rotas forman."
+  },
+  {
+    stage: "Etapa 4 / 4 — Sanación & Florecimiento",
+    title: "La Silla Transformada",
+    categoryName: "Obra Serial / Ilustración Digital",
+    src: "bocetos/diseños/Ilustraciones/Obra serial_Una Memoria Que Se Transforma/Silla Tansformada.jpg",
+    desc: "De la silla crecen plantas, flores y vuelan mariposas. La transformación no busca esconder el daño, sino convertirlo en algo vivo, en algo que florece. Esta obra representa la sanación, el renacer y la posibilidad de crear belleza a partir de lo que antes dolía. Las mariposas simbolizan cambio, libertad y evolución personal. La silla deja de ser un objeto viejo y se convierte en un pequeño ecosistema: metáfora de crecimiento interno."
+  }
+];
+
+// 5. Datos de CUADROS COMPARATIVOS (Boceto a lápiz vs Ilustración Digital)
 const drawingsComparison = [
   {
     id: "robot",
@@ -151,8 +183,17 @@ const drawingsComparison = [
     desc: "Diseño conceptual y exploración anatómica de androides y robots bípedos. Estudio de proporciones, articulaciones, armadura y posturas dinámicas.",
     sketchSrc: "bocetos/diseños/Bocetos Robot.png",
     sketchTitle: "Boceto a Lápiz — Robot",
-    digitalSrc: null, // Listo para agregar en el futuro
+    digitalSrc: null,
     aspect: "wide"
+  },
+  {
+    id: "turbina",
+    title: "Turbina — Prop Mecánico & Estructura",
+    desc: "Boceto de ingeniería conceptual y prop mecánico. Estudio de hélices, turbina de propulsión, volumen circular y sombreado a mano alzada.",
+    sketchSrc: "bocetos/diseños/Turbina.png",
+    sketchTitle: "Boceto a Lápiz — Turbina",
+    digitalSrc: null,
+    aspect: "square"
   },
   {
     id: "tuerca",
@@ -210,6 +251,38 @@ function renderGrid(containerId, itemsList) {
   });
 }
 
+// RENDERIZAR OBRA SERIAL
+function renderSerialWork() {
+  const container = document.getElementById("serialGrid");
+  if (!container) return;
+  container.innerHTML = "";
+
+  serialWorks.forEach((item, index) => {
+    const card = document.createElement("div");
+    card.className = "serial-card";
+    card.setAttribute("role", "button");
+    card.setAttribute("tabindex", "0");
+
+    card.innerHTML = `
+      <div class="serial-img-wrapper">
+        <img src="${item.src}" alt="${item.title}" loading="lazy" />
+      </div>
+      <div class="serial-card-info">
+        <span class="serial-card-stage">${item.stage}</span>
+        <h4 class="serial-card-title">${item.title}</h4>
+        <p class="serial-card-desc">${item.desc}</p>
+      </div>
+    `;
+
+    card.addEventListener("click", () => {
+      activeCollection = serialWorks;
+      openModal(index);
+    });
+
+    container.appendChild(card);
+  });
+}
+
 // RENDERIZAR CUADROS COMPARATIVOS (BOCETO VS ILUSTRACIÓN)
 function renderComparisons() {
   const container = document.getElementById("comparisonList");
@@ -220,7 +293,6 @@ function renderComparisons() {
     const card = document.createElement("div");
     card.className = "comparison-card";
 
-    // Lado derecho: imagen o espacio reservado
     let rightSideContent = "";
     if (item.digitalSrc) {
       rightSideContent = `
@@ -246,7 +318,6 @@ function renderComparisons() {
       </div>
 
       <div class="comparison-grid">
-        <!-- Lado Izquierdo: Boceto a lápiz -->
         <div class="comparison-side">
           <span class="side-label sketch">✏️ Boceto a Lápiz (Original)</span>
           <div class="side-frame" role="button" tabindex="0" onclick="openDrawingModal(${index}, 'sketch')">
@@ -254,7 +325,6 @@ function renderComparisons() {
           </div>
         </div>
 
-        <!-- Lado Derecho: Ilustración Final / Espacio reservado -->
         <div class="comparison-side">
           <span class="side-label digital">✨ Ilustración Mejorada & Digital</span>
           ${rightSideContent}
@@ -266,7 +336,6 @@ function renderComparisons() {
   });
 }
 
-// Modal para bocetos comparativos
 function openDrawingModal(index, side) {
   const item = drawingsComparison[index];
   if (!item) return;
@@ -407,5 +476,6 @@ document.addEventListener("DOMContentLoaded", () => {
   renderGrid("kupiGrid", kupiItems);
   renderGrid("kannaGrid", kannaItems);
   renderGrid("logosGrid", logosItems);
+  renderSerialWork();
   renderComparisons();
 });
