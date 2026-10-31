@@ -245,7 +245,7 @@ const fotoDanza = [
   {
     title: "El Trazo Invisible",
     categoryName: "Fotografía / Danza",
-    src: "bocetos/fotografia/danza.jpg",
+    src: "bocetos/fotografias/danza.jpg",
     desc: "Fotografía que explora la libertad del gesto y la ligereza del cuerpo. Como si la cinta fuera una extensión de la respiración, la imagen registra la espontaneidad de la danza dentro del espacio cotidiano, convirtiendo un rincón común en un escenario de vuelo.",
     aspect: "tall"
   }
@@ -256,21 +256,21 @@ const fotoSerie = [
   {
     title: "El juego del cosquilleo",
     categoryName: "Cómplices de Juego",
-    src: "bocetos/fotografia/complices_juego/foto1.jpg",
+    src: "bocetos/fotografias/serie fotografica cómplices de juego/el juego del cosquilleo.jpg",
     desc: "Un instante de juego descarnado pero inofensivo; la mirada del perro refleja puro entusiasmo mientras finge atrapar el pie de su dueña.",
     aspect: "wide"
   },
   {
     title: "Impulso y Alegría",
     categoryName: "Cómplices de Juego",
-    src: "bocetos/fotografia/complices_juego/foto2.jpg",
+    src: "bocetos/fotografias/serie fotografica cómplices de juego/impulso y alegría.jpg",
     desc: "La captura de un brinco lleno de energía, capturando el entusiasmo de la mascota al buscar el contacto físico en medio de las risas.",
     aspect: "wide"
   },
   {
     title: "Risa Canina",
     categoryName: "Cómplices de Juego",
-    src: "bocetos/fotografia/complices_juego/foto3.jpg",
+    src: "bocetos/fotografias/serie fotografica cómplices de juego/risa canina.jpg",
     desc: "Vista cenital de un bostezo/juego expansivo que transmite la entrega total y la comodidad de sentirse seguro en casa.",
     aspect: "tall"
   }
