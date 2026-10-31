@@ -745,14 +745,112 @@ body {
 .modal-next { right: 1.5rem; }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 0.85rem 1rem;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+
+  .nav-links a {
+    font-size: 0.78rem;
+    white-space: nowrap;
+    padding: 4px 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: var(--radius-full);
+    border: 1px solid var(--border-subtle);
+  }
+
+  .hero {
+    padding: 2.5rem 1rem 1.75rem;
+  }
+
+  .hero h1 {
+    font-size: 1.85rem;
+    letter-spacing: -0.5px;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .category-nav-bar {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .cat-btn {
+    width: 100%;
+    padding: 0.75rem 1.1rem;
+  }
+
+  .cat-btn .cat-icon {
+    font-size: 1.25rem;
+  }
+
+  .cat-info-btn strong {
+    font-size: 0.88rem;
+  }
+
+  .cat-info-btn small {
+    font-size: 0.75rem;
+  }
+
+  .project-card-header {
+    padding: 1.1rem 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .card-main-title {
+    font-size: 1.25rem;
+  }
+
+  .card-main-sub {
+    font-size: 0.85rem;
+  }
+
+  .project-card-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .project-inner-body {
+    padding: 1.5rem 1rem;
+  }
+
+  .project-banner {
+    padding: 1.25rem;
+  }
+
+  .project-banner h3 {
+    font-size: 1.3rem;
+  }
+
+  .pitch-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
   .modal-prev { left: 0.5rem; }
   .modal-next { right: 0.5rem; }
   .modal-close { top: 1rem; right: 1rem; }
-  .category-nav-bar { flex-direction: column; }
-  .cat-btn { width: 100%; }
-  .project-card-header { padding: 1.25rem; flex-direction: column; align-items: flex-start; gap: 1rem; }
-  .project-card-right { width: 100%; justify-content: space-between; }
-  .navbar { padding: 1rem 1.25rem; }
 }
 
 @keyframes fadeIn {
