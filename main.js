@@ -143,7 +143,7 @@ const logosItems = [
   }
 ];
 
-// Estado global
+// Estado global de modal
 let activeCollection = kupiItems;
 let activeIndex = 0;
 
@@ -179,30 +179,65 @@ function renderGrid(containerId, itemsList) {
   });
 }
 
-// Selector de subcarpetas (Tabs) para Páginas Web (Kupi / Kannamarket)
-const tabKupi = document.getElementById("tabKupi");
-const tabKannamarket = document.getElementById("tabKannamarket");
-const viewKupi = document.getElementById("viewKupi");
-const viewKannamarket = document.getElementById("viewKannamarket");
+// TOGGLE DESPLEGABLE DE PROYECTOS (KUPI / KANNAMARKET)
+function toggleProject(projectId) {
+  const cardKupi = document.getElementById("cardKupi");
+  const cardKannamarket = document.getElementById("cardKannamarket");
 
-function switchTab(tab) {
-  if (tab === "kupi") {
-    tabKupi.classList.add("active");
-    tabKannamarket.classList.remove("active");
-    viewKupi.classList.add("active");
-    viewKannamarket.classList.remove("active");
-  } else {
-    tabKannamarket.classList.add("active");
-    tabKupi.classList.remove("active");
-    viewKannamarket.classList.add("active");
-    viewKupi.classList.remove("active");
+  if (projectId === "kupi") {
+    cardKupi.classList.toggle("expanded");
+  } else if (projectId === "kannamarket") {
+    cardKannamarket.classList.toggle("expanded");
   }
 }
 
-if (tabKupi && tabKannamarket) {
-  tabKupi.addEventListener("click", () => switchTab("kupi"));
-  tabKannamarket.addEventListener("click", () => switchTab("kannamarket"));
+// SISTEMA DE NAVEGACIÓN POR CATEGORÍAS PRINCIPALES
+const catButtons = document.querySelectorAll(".cat-btn");
+const catSections = document.querySelectorAll(".main-category-section");
+const navTabs = document.querySelectorAll(".nav-tab");
+
+function selectCategory(targetId) {
+  // Actualizar botones principales
+  catButtons.forEach(btn => {
+    btn.classList.toggle("active", btn.getAttribute("data-target") === targetId);
+  });
+
+  // Actualizar secciones
+  catSections.forEach(section => {
+    section.classList.toggle("active", section.id === targetId);
+  });
+
+  // Actualizar nav superior
+  const mapNav = {
+    "cat-web": "web-ui",
+    "cat-logos": "logos",
+    "cat-arte": "arte"
+  };
+  const activeNavKey = mapNav[targetId];
+  navTabs.forEach(link => {
+    link.classList.toggle("active", link.getAttribute("data-nav") === activeNavKey);
+  });
 }
+
+catButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const target = btn.getAttribute("data-target");
+    selectCategory(target);
+  });
+});
+
+navTabs.forEach(tab => {
+  tab.addEventListener("click", (e) => {
+    e.preventDefault();
+    const navKey = tab.getAttribute("data-nav");
+    const mapCategory = {
+      "web-ui": "cat-web",
+      "logos": "cat-logos",
+      "arte": "cat-arte"
+    };
+    selectCategory(mapCategory[navKey]);
+  });
+});
 
 // Lightbox / Modal
 const modal = document.getElementById("lightboxModal");
