@@ -73,16 +73,15 @@
       
       <div class="category-header">
         <h2>Diseño & Prototipado de Páginas Web y Apps</h2>
-        <p>Selecciona uno de los proyectos para desplegar su información técnica, caso de estudio y pantallas interactivas.</p>
+        <p>Selecciona un proyecto para enfocar su información técnica, caso de estudio y pantallas interactivas.</p>
       </div>
 
-      <!-- TARJETAS SELECTORAS DE PROYECTOS (ESTILO ACORDEÓN / DESPLEGABLE) -->
+      <!-- ACORDEÓN EXCLUSIVO (KUPI Y KANNAMARKET) -->
       <div class="projects-cards-container">
         
         <!-- PROYECTO 1: KUPI APP -->
         <div class="project-card-item" id="cardKupi">
-          <!-- Cabecera de la tarjeta (Click para desplegar) -->
-          <div class="project-card-header" onclick="toggleProject('kupi')">
+          <div class="project-card-header" onclick="toggleWebProject('cardKupi')">
             <div class="project-card-left">
               <span class="subfolder-badge app">Mobile UI/UX</span>
               <h3 class="card-main-title">📱 KUPI App</h3>
@@ -96,7 +95,6 @@
             </div>
           </div>
 
-          <!-- Contenido desplegable oculto por defecto -->
           <div class="project-expandable-content" id="contentKupi">
             <div class="project-inner-body">
               <div class="project-banner">
@@ -119,7 +117,6 @@
                 <span>Haz clic en cualquier pantalla para verla ampliada</span>
               </div>
               
-              <!-- Galería de Kupi -->
               <div class="gallery-grid" id="kupiGrid"></div>
             </div>
           </div>
@@ -127,8 +124,7 @@
 
         <!-- PROYECTO 2: KANNA MARKET -->
         <div class="project-card-item" id="cardKannamarket">
-          <!-- Cabecera de la tarjeta (Click para desplegar) -->
-          <div class="project-card-header" onclick="toggleProject('kannamarket')">
+          <div class="project-card-header" onclick="toggleWebProject('cardKannamarket')">
             <div class="project-card-left">
               <span class="subfolder-badge web">E-Commerce Web</span>
               <h3 class="card-main-title">🌿 Kanna Market</h3>
@@ -142,7 +138,6 @@
             </div>
           </div>
 
-          <!-- Contenido desplegable oculto por defecto -->
           <div class="project-expandable-content" id="contentKannamarket">
             <div class="project-inner-body">
               <div class="project-banner">
@@ -172,7 +167,6 @@
                 <span>Explora el paso a paso desde el Home hasta el Carrito de Compras</span>
               </div>
               
-              <!-- Galería de Kanna Market -->
               <div class="gallery-grid" id="kannaGrid"></div>
             </div>
           </div>
@@ -182,7 +176,7 @@
     </section>
 
     <!-- ==============================================
-         CATEGORÍA 2: LOGOS & IDENTIDAD VISUAL
+         CATEGORÍA 2: LOGOS & IDENTIDAD VISUAL (EN CUADRÍCULA DIRECTA COMO EN LA FOTO)
          ============================================== -->
     <section class="main-category-section" id="cat-logos">
       <div class="category-header">
@@ -190,6 +184,7 @@
         <p>Diseño de isotipos, logotipos e identidades de marca desarrollados con base en el concepto, público objetivo y personalidad de cada proyecto.</p>
       </div>
 
+      <!-- Cuadrícula limpia y directa de logos -->
       <div class="gallery-grid" id="logosGrid"></div>
     </section>
 

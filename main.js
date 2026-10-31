@@ -125,7 +125,7 @@ const kannaItems = [
   }
 ];
 
-// 3. Datos de LOGOS & IDENTIDAD VISUAL
+// 3. Datos de LOGOS & IDENTIDADES VISUALES (Galería directa)
 const logosItems = [
   {
     title: "Logo Finix — Identidad para Aplicación Móvil",
@@ -179,19 +179,29 @@ function renderGrid(containerId, itemsList) {
   });
 }
 
-// TOGGLE DESPLEGABLE DE PROYECTOS (KUPI / KANNAMARKET)
-function toggleProject(projectId) {
+// =========================================================================
+// ACORDEÓN EXCLUSIVO PARA DISEÑO WEB (KUPI Y KANNAMARKET)
+// =========================================================================
+function toggleWebProject(targetCardId) {
   const cardKupi = document.getElementById("cardKupi");
   const cardKannamarket = document.getElementById("cardKannamarket");
+  const targetCard = document.getElementById(targetCardId);
 
-  if (projectId === "kupi") {
-    cardKupi.classList.toggle("expanded");
-  } else if (projectId === "kannamarket") {
-    cardKannamarket.classList.toggle("expanded");
+  const isAlreadyOpen = targetCard.classList.contains("expanded");
+
+  // Cerrar ambas pestañas
+  cardKupi.classList.remove("expanded");
+  cardKannamarket.classList.remove("expanded");
+
+  // Si no estaba abierta, abrir la seleccionada
+  if (!isAlreadyOpen) {
+    targetCard.classList.add("expanded");
   }
 }
 
-// SISTEMA DE NAVEGACIÓN POR CATEGORÍAS PRINCIPALES
+// =========================================================================
+// NAVEGACIÓN ENTRE CATEGORÍAS PRINCIPALES
+// =========================================================================
 const catButtons = document.querySelectorAll(".cat-btn");
 const catSections = document.querySelectorAll(".main-category-section");
 const navTabs = document.querySelectorAll(".nav-tab");
@@ -239,7 +249,9 @@ navTabs.forEach(tab => {
   });
 });
 
-// Lightbox / Modal
+// =========================================================================
+// LIGHTBOX / MODAL
+// =========================================================================
 const modal = document.getElementById("lightboxModal");
 const modalImg = document.getElementById("modalImg");
 const modalTitle = document.getElementById("modalTitle");
