@@ -478,6 +478,166 @@ body {
   color: var(--text-muted);
 }
 
+/* =========================================================================
+   CUADROS COMPARATIVOS: BOCETO A LÁPIZ VS ILUSTRACIÓN DIGITAL
+   ========================================================================= */
+.comparison-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.comparison-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: border-color 0.3s ease;
+}
+
+.comparison-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.comparison-header {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1rem;
+}
+
+.comparison-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.35rem;
+}
+
+.comparison-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.comparison-side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.side-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.side-label.sketch {
+  color: #fbbf24;
+}
+
+.side-label.digital {
+  color: var(--accent-cyan);
+}
+
+.side-frame {
+  background: #f8fafc;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.side-frame:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-glow);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.side-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.75rem;
+  transition: transform 0.35s ease;
+}
+
+.side-frame:hover img {
+  transform: scale(1.04);
+}
+
+/* Espacio reservado para ilustraciones futuras */
+.side-frame.placeholder-digital {
+  background: rgba(255, 255, 255, 0.02);
+  border: 2px dashed rgba(255, 255, 255, 0.15);
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.side-frame.placeholder-digital:hover {
+  transform: none;
+  border-color: var(--accent-cyan);
+  box-shadow: none;
+}
+
+.placeholder-icon {
+  font-size: 2.25rem;
+  opacity: 0.8;
+}
+
+.placeholder-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.placeholder-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  max-width: 280px;
+}
+
+.placeholder-tag {
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  color: var(--accent-cyan);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .comparison-card {
+    padding: 1.25rem;
+  }
+}
+
 /* Grilla de Galería */
 .gallery-grid {
   display: grid;

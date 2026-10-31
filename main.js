@@ -143,6 +143,37 @@ const logosItems = [
   }
 ];
 
+// 4. Datos de DISEÑOS & PERSONAJES (Cuadros Comparativos: Boceto a lápiz vs Ilustración Digital)
+const drawingsComparison = [
+  {
+    id: "robot",
+    title: "Bocetos Robot — Exploración & Concepto Mecánico",
+    desc: "Diseño conceptual y exploración anatómica de androides y robots bípedos. Estudio de proporciones, articulaciones, armadura y posturas dinámicas.",
+    sketchSrc: "bocetos/diseños/Bocetos Robot.png",
+    sketchTitle: "Boceto a Lápiz — Robot",
+    digitalSrc: null, // Listo para agregar en el futuro
+    aspect: "wide"
+  },
+  {
+    id: "tuerca",
+    title: "Don Tuerca — Diseño de Personaje Original",
+    desc: "Creación de personaje animado con estilo carismático y elementos mecánicos. Boceto a mano alzada enfocado en expresividad facial y silueta distintiva.",
+    sketchSrc: "bocetos/diseños/Don Tuerca.png",
+    sketchTitle: "Boceto a Lápiz — Don Tuerca",
+    digitalSrc: null,
+    aspect: "square"
+  },
+  {
+    id: "contenedor",
+    title: "Contenedor — Prop & Elemento de Escenario",
+    desc: "Boceto estructural de objeto/prop para universo narrativo. Estudio de perspectiva, volumen industrial y textura a lápiz.",
+    sketchSrc: "bocetos/diseños/contenedor.png",
+    sketchTitle: "Boceto a Lápiz — Contenedor",
+    digitalSrc: null,
+    aspect: "square"
+  }
+];
+
 // Estado global de modal
 let activeCollection = kupiItems;
 let activeIndex = 0;
@@ -179,9 +210,79 @@ function renderGrid(containerId, itemsList) {
   });
 }
 
-// =========================================================================
+// RENDERIZAR CUADROS COMPARATIVOS (BOCETO VS ILUSTRACIÓN)
+function renderComparisons() {
+  const container = document.getElementById("comparisonList");
+  if (!container) return;
+  container.innerHTML = "";
+
+  drawingsComparison.forEach((item, index) => {
+    const card = document.createElement("div");
+    card.className = "comparison-card";
+
+    // Lado derecho: imagen o espacio reservado
+    let rightSideContent = "";
+    if (item.digitalSrc) {
+      rightSideContent = `
+        <div class="side-frame" onclick="openDrawingModal(${index}, 'digital')">
+          <img src="${item.digitalSrc}" alt="Ilustración final ${item.title}" loading="lazy" />
+        </div>
+      `;
+    } else {
+      rightSideContent = `
+        <div class="side-frame placeholder-digital">
+          <span class="placeholder-icon">🎨</span>
+          <h4 class="placeholder-title">Ilustración Digital</h4>
+          <p class="placeholder-text">Espacio reservado para la versión final vectorizada, entintada y coloreada.</p>
+          <span class="placeholder-tag">En desarrollo</span>
+        </div>
+      `;
+    }
+
+    card.innerHTML = `
+      <div class="comparison-header">
+        <h3 class="comparison-title">${item.title}</h3>
+        <p class="comparison-desc">${item.desc}</p>
+      </div>
+
+      <div class="comparison-grid">
+        <!-- Lado Izquierdo: Boceto a lápiz -->
+        <div class="comparison-side">
+          <span class="side-label sketch">✏️ Boceto a Lápiz (Original)</span>
+          <div class="side-frame" role="button" tabindex="0" onclick="openDrawingModal(${index}, 'sketch')">
+            <img src="${item.sketchSrc}" alt="${item.sketchTitle}" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Lado Derecho: Ilustración Final / Espacio reservado -->
+        <div class="comparison-side">
+          <span class="side-label digital">✨ Ilustración Mejorada & Digital</span>
+          ${rightSideContent}
+        </div>
+      </div>
+    `;
+
+    container.appendChild(card);
+  });
+}
+
+// Modal para bocetos comparativos
+function openDrawingModal(index, side) {
+  const item = drawingsComparison[index];
+  if (!item) return;
+
+  const modalItem = {
+    title: side === "sketch" ? `${item.title} (Boceto Original)` : `${item.title} (Ilustración Digital)`,
+    categoryName: "Bocetos & Dibujos",
+    src: side === "sketch" ? item.sketchSrc : item.digitalSrc,
+    desc: item.desc
+  };
+
+  activeCollection = [modalItem];
+  openModal(0);
+}
+
 // ACORDEÓN EXCLUSIVO PARA DISEÑO WEB (KUPI Y KANNAMARKET)
-// =========================================================================
 function toggleWebProject(targetCardId) {
   const cardKupi = document.getElementById("cardKupi");
   const cardKannamarket = document.getElementById("cardKannamarket");
@@ -189,35 +290,28 @@ function toggleWebProject(targetCardId) {
 
   const isAlreadyOpen = targetCard.classList.contains("expanded");
 
-  // Cerrar ambas pestañas
   cardKupi.classList.remove("expanded");
   cardKannamarket.classList.remove("expanded");
 
-  // Si no estaba abierta, abrir la seleccionada
   if (!isAlreadyOpen) {
     targetCard.classList.add("expanded");
   }
 }
 
-// =========================================================================
 // NAVEGACIÓN ENTRE CATEGORÍAS PRINCIPALES
-// =========================================================================
 const catButtons = document.querySelectorAll(".cat-btn");
 const catSections = document.querySelectorAll(".main-category-section");
 const navTabs = document.querySelectorAll(".nav-tab");
 
 function selectCategory(targetId) {
-  // Actualizar botones principales
   catButtons.forEach(btn => {
     btn.classList.toggle("active", btn.getAttribute("data-target") === targetId);
   });
 
-  // Actualizar secciones
   catSections.forEach(section => {
     section.classList.toggle("active", section.id === targetId);
   });
 
-  // Actualizar nav superior
   const mapNav = {
     "cat-web": "web-ui",
     "cat-logos": "logos",
@@ -249,9 +343,7 @@ navTabs.forEach(tab => {
   });
 });
 
-// =========================================================================
 // LIGHTBOX / MODAL
-// =========================================================================
 const modal = document.getElementById("lightboxModal");
 const modalImg = document.getElementById("modalImg");
 const modalTitle = document.getElementById("modalTitle");
@@ -315,4 +407,5 @@ document.addEventListener("DOMContentLoaded", () => {
   renderGrid("kupiGrid", kupiItems);
   renderGrid("kannaGrid", kannaItems);
   renderGrid("logosGrid", logosItems);
+  renderComparisons();
 });
