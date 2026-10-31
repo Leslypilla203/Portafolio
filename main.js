@@ -256,21 +256,21 @@ const fotoSerie = [
   {
     title: "El juego del cosquilleo",
     categoryName: "Cómplices de Juego",
-    src: "bocetos/fotografias/complices_de_juego/el_juego_del_cosquilleo.jpg",
+    src: "bocetos/fotografias/complices_de_juego/foto1.jpg",
     desc: "Un instante de juego descarnado pero inofensivo; la mirada del perro refleja puro entusiasmo mientras finge atrapar el pie de su dueña.",
     aspect: "wide"
   },
   {
     title: "Impulso y Alegría",
     categoryName: "Cómplices de Juego",
-    src: "bocetos/fotografias/complices_de_juego/impulso_y_alegria.jpg",
+    src: "bocetos/fotografias/complices_de_juego/foto2.jpg",
     desc: "La captura de un brinco lleno de energía, capturando el entusiasmo de la mascota al buscar el contacto físico en medio de las risas.",
     aspect: "wide"
   },
   {
     title: "Risa Canina",
     categoryName: "Cómplices de Juego",
-    src: "bocetos/fotografias/complices_de_juego/risa_canina.jpg",
+    src: "bocetos/fotografias/complices_de_juego/foto3.jpg",
     desc: "Vista cenital de un bostezo/juego expansivo que transmite la entrega total y la comodidad de sentirse seguro en casa.",
     aspect: "tall"
   }
