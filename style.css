@@ -30,7 +30,7 @@ body {
   color: var(--text-main);
   line-height: 1.6;
   overflow-x: hidden;
-  background-image: 
+  background-image:
     radial-gradient(circle at 15% 15%, rgba(112, 0, 255, 0.12) 0%, transparent 40%),
     radial-gradient(circle at 85% 25%, rgba(0, 240, 255, 0.1) 0%, transparent 45%);
   background-attachment: fixed;
@@ -84,7 +84,8 @@ body {
   cursor: pointer;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
   color: var(--accent-cyan);
 }
 
@@ -750,6 +751,7 @@ body {
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
+
   .comparison-card {
     padding: 1.25rem;
   }
@@ -1018,8 +1020,13 @@ body {
   color: #000;
 }
 
-.modal-prev { left: 1.5rem; }
-.modal-next { right: 1.5rem; }
+.modal-prev {
+  left: 1.5rem;
+}
+
+.modal-next {
+  right: 1.5rem;
+}
 
 @media (max-width: 768px) {
   .navbar {
@@ -1131,14 +1138,30 @@ body {
     line-height: 1.6;
   }
 
-  .modal-prev { left: 0.5rem; }
-  .modal-next { right: 0.5rem; }
-  .modal-close { top: 1rem; right: 1rem; }
+  .modal-prev {
+    left: 0.5rem;
+  }
+
+  .modal-next {
+    right: 0.5rem;
+  }
+
+  .modal-close {
+    top: 1rem;
+    right: 1rem;
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 footer {
