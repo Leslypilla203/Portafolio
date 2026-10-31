@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=5">
 </head>
+
 <body>
 
   <!-- Barra de navegación -->
@@ -22,6 +26,7 @@
         <li><a href="#" class="nav-tab active" data-nav="web-ui">Diseño Web & UI/UX</a></li>
         <li><a href="#" class="nav-tab" data-nav="logos">Logos & Marcas</a></li>
         <li><a href="#" class="nav-tab" data-nav="arte">Dibujos & Personajes</a></li>
+        <li><a href="#" class="nav-tab" data-nav="fotografia">Fotografía</a></li>
       </ul>
     </nav>
   </header>
@@ -31,10 +36,16 @@
     <div class="badge">
       <span class="badge-icon">✦</span> Portafolio Profesional
     </div>
-    <h1>Diseño de Interfaces, Marcas & <span class="gradient">Experiencias Digitales</span></h1>
+    <h1>Diseñadora Visual & <span class="gradient">Desarrolladora Frontend</span></h1>
     <p>
-      Explora mis proyectos organizados por áreas de especialización. Selecciona una categoría para acceder a su contenido detallado y casos de estudio.
+      Explora mis proyectos organizados por áreas de especialización. Selecciona una categoría para acceder a su
+      contenido detallado y casos de estudio.
     </p>
+
+    <!-- Botón Hoja de Vida -->
+    <a href="portafolio/Hoja_de_Vida.pdf" target="_blank" download class="btn-cv">
+      📄 Descargar Hoja de Vida
+    </a>
 
     <!-- BOTONES PRINCIPALES DE CATEGORÍAS -->
     <div class="category-nav-bar">
@@ -43,6 +54,14 @@
         <div class="cat-info-btn">
           <strong>Diseño Web & Prototipado</strong>
           <small>Interfaces UI/UX & Apps</small>
+        </div>
+      </button>
+
+      <button class="cat-btn" data-target="cat-fotografia">
+        <span class="cat-icon">📸</span>
+        <div class="cat-info-btn">
+          <strong>Fotografía</strong>
+          <small>Danza & Mascotas</small>
         </div>
       </button>
 
@@ -65,20 +84,20 @@
   </section>
 
   <main class="container">
-    
+
     <!-- ==============================================
          CATEGORÍA 1: DISEÑO Y PROTOTIPADO DE PÁGINAS WEB
          ============================================== -->
     <section class="main-category-section active" id="cat-web">
-      
+
       <div class="category-header">
         <h2>Diseño & Prototipado de Páginas Web y Apps</h2>
         <p>Selecciona un proyecto para enfocar su información técnica, caso de estudio y pantallas interactivas.</p>
       </div>
 
-      <!-- ACORDEÓN EXCLUSIVO (KUPI Y KANNAMARKET) -->
+      <!-- ACORDEÓN EXCLUSIVO (KUPI, KANNAMARKET, ORION) -->
       <div class="projects-cards-container">
-        
+
         <!-- PROYECTO 1: KUPI APP -->
         <div class="project-card-item" id="cardKupi">
           <div class="project-card-header" onclick="toggleWebProject('cardKupi')">
@@ -101,8 +120,11 @@
                 <span class="pill-tag">Diseño de Interfaz Móvil & UX</span>
                 <h3>Kupi — Plataforma Móvil & Ecosistema Digital</h3>
                 <p class="pitch-text">
-                  Participé activamente junto al equipo multidisciplinario de <strong>San Juanito S.A.S</strong> en el diseño de interfaces y experiencia de usuario (UI/UX) para <strong>Kupi</strong>. 
-                  El objetivo principal fue conceptualizar y estructurar una interfaz limpia, moderna y altamente intuitiva, optimizando los flujos de navegación, la jerarquía visual de datos y la interacción táctil en dispositivos móviles para ofrecer una experiencia fluida y atractiva al usuario final.
+                  Participé activamente junto al equipo multidisciplinario de <strong>San Juanito S.A.S</strong> en el
+                  diseño de interfaces y experiencia de usuario (UI/UX) para <strong>Kupi</strong>.
+                  El objetivo principal fue conceptualizar y estructurar una interfaz limpia, moderna y altamente
+                  intuitiva, optimizando los flujos de navegación, la jerarquía visual de datos y la interacción táctil
+                  en dispositivos móviles para ofrecer una experiencia fluida y atractiva al usuario final.
                 </p>
                 <div class="tech-tags">
                   <span>Figma / SVG Vectorial</span>
@@ -116,7 +138,7 @@
                 <h4>Pantallas y Vistas del Sistema (12 Pantallas)</h4>
                 <span>Haz clic en cualquier pantalla para verla ampliada</span>
               </div>
-              
+
               <div class="gallery-grid" id="kupiGrid"></div>
             </div>
           </div>
@@ -144,8 +166,12 @@
                 <span class="pill-tag green">E-Commerce & Transformación Digital</span>
                 <h3>Kanna Market — Plataforma de Comercio Electrónico</h3>
                 <p class="pitch-text">
-                  Proyecto de diseño y desarrollo web enfocado en la transformación digital de una microempresa, facilitando su expansión comercial hacia el modelo <strong>E-Commerce</strong>. 
-                  Se diseñó una plataforma enfocada en la conversión, con catálogo interactivo de productos naturales y CBD, banners promocionales de impacto, navegación organizada por categorías, módulos de ofertas y canal de atención directa e instantánea vía WhatsApp para maximizar las ventas y fidelizar a los clientes.
+                  Proyecto de diseño y desarrollo web enfocado en la transformación digital de una microempresa,
+                  facilitando su expansión comercial hacia el modelo <strong>E-Commerce</strong>.
+                  Se diseñó una plataforma enfocada en la conversión, con catálogo interactivo de productos naturales y
+                  CBD, banners promocionales de impacto, navegación organizada por categorías, módulos de ofertas y
+                  canal de atención directa e instantánea vía WhatsApp para maximizar las ventas y fidelizar a los
+                  clientes.
                 </p>
                 <div class="tech-tags">
                   <span>E-Commerce Design</span>
@@ -153,9 +179,10 @@
                   <span>Conversión & WhatsApp Integration</span>
                   <span>Web Responsive</span>
                 </div>
-                
+
                 <div class="live-action-box">
-                  <a href="https://leslypilla203.github.io/kannamarket/" target="_blank" rel="noopener" class="btn-live">
+                  <a href="https://leslypilla203.github.io/kannamarket/" target="_blank" rel="noopener"
+                    class="btn-live">
                     <span>Visitar Sitio Web en Vivo</span> ↗
                   </a>
                   <span class="live-note">URL oficial alojada en GitHub Pages</span>
@@ -166,8 +193,64 @@
                 <h4>Flujo de Navegación & Pantallas de la Plataforma</h4>
                 <span>Explora el paso a paso desde el Home hasta el Carrito de Compras</span>
               </div>
-              
+
               <div class="gallery-grid" id="kannaGrid"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROYECTO 3: ORION'S JOURNEY -->
+        <div class="project-card-item" id="cardOrion">
+          <div class="project-card-header" onclick="toggleWebProject('cardOrion')">
+            <div class="project-card-left">
+              <span class="subfolder-badge web">Web & Prototipado</span>
+              <h3 class="card-main-title">🚀 Orion's Journey</h3>
+              <p class="card-main-sub">Diseño Web y Experiencia Visual Interactiva</p>
+            </div>
+            <div class="project-card-right">
+              <span class="project-status-text">Nuevo Proyecto</span>
+              <div class="expand-arrow">
+                <span class="arrow-icon">▼</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-expandable-content" id="contentOrion">
+            <div class="project-inner-body">
+              <div class="project-banner">
+                <span class="pill-tag"
+                  style="background: rgba(0, 240, 255, 0.15); border-color: rgba(0, 240, 255, 0.3); color: #00f0ff;">Web
+                  UI & Prototipado</span>
+                <h3>Orion's Journey — Exploración y Aventura Digital</h3>
+                <p class="pitch-text">
+                  Diseño de página web enfocada en la narrativa visual y la inmersión del usuario. <strong>Orion's
+                    Journey</strong> combina elementos estéticos llamativos con una navegación estructurada para llevar
+                  al visitante a través de un viaje interactivo, destacando el uso de maquetación web moderna y
+                  jerarquía de información.
+                </p>
+                <div class="tech-tags">
+                  <span>Diseño Web</span>
+                  <span>UI/UX</span>
+                  <span>Narrativa Visual</span>
+                  <span>Prototipado interactivo</span>
+                </div>
+
+                <div class="live-action-box">
+                  <!-- Enlace actualizado a tu GitHub Pages -->
+                  <a href="https://leslypilla203.github.io/orionsjourney_web/" target="_blank" rel="noopener"
+                    class="btn-live">
+                    <span>Ver Proyecto en Vivo</span> ↗
+                  </a>
+                  <span class="live-note">URL oficial alojada en GitHub Pages</span>
+                </div>
+              </div>
+
+              <div class="section-divider">
+                <h4>Vistas y Pantallas del Proyecto</h4>
+                <span>Haz clic en cualquier pantalla para verla ampliada</span>
+              </div>
+
+              <div class="gallery-grid" id="orionGrid"></div>
             </div>
           </div>
         </div>
@@ -176,25 +259,26 @@
     </section>
 
     <!-- ==============================================
-         CATEGORÍA 2: LOGOS & IDENTIDAD VISUAL (EN CUADRÍCULA DIRECTA COMO EN LA FOTO)
+         CATEGORÍA 2: LOGOS & IDENTIDAD VISUAL
          ============================================== -->
     <section class="main-category-section" id="cat-logos">
       <div class="category-header">
         <h2>Logos & Creación de Marca</h2>
-        <p>Diseño de isotipos, logotipos e identidades de marca desarrollados con base en el concepto, público objetivo y personalidad de cada proyecto.</p>
+        <p>Diseño de isotipos, logotipos e identidades de marca desarrollados con base en el concepto, público objetivo
+          y personalidad de cada proyecto.</p>
       </div>
 
-      <!-- Cuadrícula limpia y directa de logos -->
       <div class="gallery-grid" id="logosGrid"></div>
     </section>
 
     <!-- ==============================================
-         CATEGORÍA 3: DISEÑOS, DIBUJOS & PERSONAJES (OBRA SERIAL & CUADROS COMPARATIVOS)
+         CATEGORÍA 3: DISEÑOS, DIBUJOS & PERSONAJES
          ============================================== -->
     <section class="main-category-section" id="cat-arte">
       <div class="category-header">
         <h2>Diseños, Ilustraciones & Obra Serial</h2>
-        <p>Proyectos artísticos de autoría propia: serie conceptual de ilustración digital y exploración de bocetos anatómicos a lápiz.</p>
+        <p>Proyectos artísticos de autoría propia: serie conceptual de ilustración digital y exploración de bocetos
+          anatómicos a lápiz.</p>
       </div>
 
       <!-- SECCIÓN DESTACADA: OBRA SERIAL -->
@@ -203,28 +287,64 @@
           <span class="pill-tag purple">Obra Serial de Autoría Propia</span>
           <h3 class="serial-main-title">“Una memoria que se transforma”</h3>
           <p class="serial-main-desc">
-            En esta obra serial trabajé a partir de un objeto muy significativo en mi vida: una pequeña silla que conservo desde mi infancia. Cada dibujo representa una etapa emocional y un modo diferente de ver ese mismo objeto.
-            Primero la presento tal cual es: quieta, simple y cargada de recuerdos. Luego, la llevo al movimiento para mostrar los cambios y giros que enfrentamos en la vida. Después la fragmento, como un espejo roto, para hablar de los momentos en los que sentimos que algo dentro de nosotros se quiebra. Finalmente, la transformo en un espacio lleno de naturaleza, flores y mariposas, mostrando que incluso lo dañado puede florecer.
-            Mi serie no solo habla de una silla, sino de un proceso personal: recordar, caer, romperse y volver a crecer. El dibujo digital me permitió explorar estos estados desde la sensibilidad y la imaginación.
+            En esta obra serial trabajé a partir de un objeto muy significativo en mi vida: una pequeña silla que
+            conservo desde mi infancia. Cada dibujo representa una etapa emocional y un modo diferente de ver ese mismo
+            objeto.
+            Primero la presento tal cual es: quieta, simple y cargada de recuerdos. Luego, la llevo al movimiento para
+            mostrar los cambios y giros que enfrentamos en la vida. Después la fragmento, como un espejo roto, para
+            hablar de los momentos en los que sentimos que algo dentro de nosotros se quiebra. Finalmente, la transformo
+            en un espacio lleno de naturaleza, flores y mariposas, mostrando que incluso lo dañado puede florecer.
+            Mi serie no solo habla de una silla, sino de un proceso personal: recordar, caer, romperse y volver a
+            crecer. El dibujo digital me permitió explorar estos estados desde la sensibilidad y la imaginación.
           </p>
         </div>
 
-        <!-- Galería de las 4 Obras de la Serie -->
-        <div class="serial-grid" id="serialGrid">
-          <!-- Renderizado dinámicamente con JavaScript -->
-        </div>
+        <div class="serial-grid" id="serialGrid"></div>
       </div>
 
       <!-- SECCIÓN: CUADROS COMPARATIVOS DE BOCETOS A LÁPIZ -->
       <div class="section-divider" style="margin-top: 4rem; margin-bottom: 2rem;">
         <div>
           <h3 style="font-size: 1.5rem; color: #fff;">Cuadros Comparativos: Bocetos a Lápiz vs Ilustración Digital</h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.35rem;">Bocetos originales a mano alzada y espacios en desarrollo para su versión ilustrada final.</p>
+          <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.35rem;">Bocetos originales a mano alzada
+            y espacios en desarrollo para su versión ilustrada final.</p>
         </div>
       </div>
 
-      <div class="comparison-list" id="comparisonList">
-        <!-- Renderizado dinámicamente con JavaScript -->
+      <div class="comparison-list" id="comparisonList"></div>
+    </section>
+
+    <!-- ==============================================
+         CATEGORÍA 4: FOTOGRAFÍA
+         ============================================== -->
+    <section class="main-category-section" id="cat-fotografia">
+      <div class="category-header">
+        <h2>Fotografía & Exploración Visual</h2>
+        <p>Captura de movimiento, cotidianidad y la conexión emocional a través del lente.</p>
+      </div>
+
+      <!-- FOTO 1: DANZA -->
+      <div class="section-divider">
+        <h4>El Trazo Invisible</h4>
+        <span>Danza y espontaneidad en el espacio cotidiano.</span>
+      </div>
+      <div class="gallery-grid" id="fotoDanzaGrid" style="margin-bottom: 4rem;"></div>
+
+      <!-- SERIE FOTOGRÁFICA -->
+      <div class="serial-work-container">
+        <div class="serial-work-header">
+          <span class="pill-tag purple">Serie Fotográfica</span>
+          <h3 class="serial-main-title">Cómplices de Juego</h3>
+          <p class="serial-main-desc">
+            Esta serie retrata la intimidad visual entre una mascota y su humano a través de la dinámica del juego sin
+            filtros. Lo que a primera vista podría parecer un gesto brusco, en realidad revela la ternura de una mordida
+            fingida y el deleite de la convivencia diaria. La serie celebra la espontaneidad, las risas compartidas y
+            esa complicidad única donde el cuerpo se presta al juego sin temor, demostrando que el afecto también se
+            expresa en el caos divertido del hogar.
+          </p>
+        </div>
+
+        <div class="gallery-grid" id="fotoSerieGrid"></div>
       </div>
     </section>
 
@@ -236,11 +356,11 @@
       <button class="modal-close" id="closeModal" aria-label="Cerrar modal">&times;</button>
       <button class="modal-nav modal-prev" id="prevModal" aria-label="Anterior">&#10094;</button>
       <button class="modal-nav modal-next" id="nextModal" aria-label="Siguiente">&#10095;</button>
-      
+
       <div class="modal-img-container">
         <img id="modalImg" src="" alt="Vista previa">
       </div>
-      
+
       <div class="modal-info">
         <p id="modalCategory"></p>
         <h3 id="modalTitle"></h3>
@@ -255,4 +375,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>

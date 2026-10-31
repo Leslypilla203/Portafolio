@@ -86,7 +86,7 @@ const kupiItems = [
   }
 ];
 
-// 2. Datos de KANNA MARKET (Flujo E-Commerce Completo)
+// 2. Datos de KANNA MARKET
 const kannaItems = [
   {
     title: "01. Pantalla de Inicio (Home)",
@@ -125,7 +125,32 @@ const kannaItems = [
   }
 ];
 
-// 3. Datos de LOGOS & IDENTIDADES VISUALES (Galería directa)
+// 3. Datos de ORION'S JOURNEY
+const orionItems = [
+  {
+    title: "01. Pantalla Principal",
+    categoryName: "Orion's Journey / Web UI",
+    src: "bocetos/paginas web/Orion´s Journey/Orion´s Journey1.png", // AQUI CAMBIA EL NOMBRE DE LA IMAGEN 1
+    desc: "Vista principal y aterrizaje (Landing) del proyecto Orion's Journey, destacando la narrativa inicial.",
+    aspect: "wide"
+  },
+  {
+    title: "02. Sección de Exploración",
+    categoryName: "Orion's Journey / Web UI",
+    src: "bocetos/paginas web/Orion´s Journey/Orion´s Journey2.png", // AQUI CAMBIA EL NOMBRE DE LA IMAGEN 2
+    desc: "Área de contenido estructurado donde el usuario interactúa y explora la información visual.",
+    aspect: "wide"
+  },
+  {
+    title: "03. Cierre y Pie de página",
+    categoryName: "Orion's Journey / Web UI",
+    src: "bocetos/paginas web/Orion´s Journey/Orion´s Journey3.png", // AQUI CAMBIA EL NOMBRE DE LA IMAGEN 3
+    desc: "Sección inferior de la web, mostrando jerarquía de datos y diseño del footer.",
+    aspect: "wide"
+  }
+];
+
+// 4. Datos de LOGOS & IDENTIDADES VISUALES
 const logosItems = [
   {
     title: "Logo Finix — Identidad para Aplicación Móvil",
@@ -143,7 +168,7 @@ const logosItems = [
   }
 ];
 
-// 4. Datos de OBRA SERIAL: “UNA MEMORIA QUE SE TRANSFORMA”
+// 5. Datos de OBRA SERIAL: “UNA MEMORIA QUE SE TRANSFORMA”
 const serialWorks = [
   {
     stage: "Etapa 1 / 4 — Origen & Estabilidad",
@@ -175,7 +200,7 @@ const serialWorks = [
   }
 ];
 
-// 5. Datos de CUADROS COMPARATIVOS (Boceto a lápiz vs Ilustración Digital)
+// 6. Datos de CUADROS COMPARATIVOS
 const drawingsComparison = [
   {
     id: "robot",
@@ -215,6 +240,42 @@ const drawingsComparison = [
   }
 ];
 
+// 7. Datos de FOTOGRAFÍA (Danza)
+const fotoDanza = [
+  {
+    title: "El Trazo Invisible",
+    categoryName: "Fotografía / Danza",
+    src: "bocetos/fotografia/danza.jpg",
+    desc: "Fotografía que explora la libertad del gesto y la ligereza del cuerpo. Como si la cinta fuera una extensión de la respiración, la imagen registra la espontaneidad de la danza dentro del espacio cotidiano, convirtiendo un rincón común en un escenario de vuelo.",
+    aspect: "tall"
+  }
+];
+
+// 8. Datos de SERIE FOTOGRÁFICA (Cómplices de Juego)
+const fotoSerie = [
+  {
+    title: "El juego del cosquilleo",
+    categoryName: "Cómplices de Juego",
+    src: "bocetos/fotografia/complices_juego/foto1.jpg",
+    desc: "Un instante de juego descarnado pero inofensivo; la mirada del perro refleja puro entusiasmo mientras finge atrapar el pie de su dueña.",
+    aspect: "wide"
+  },
+  {
+    title: "Impulso y Alegría",
+    categoryName: "Cómplices de Juego",
+    src: "bocetos/fotografia/complices_juego/foto2.jpg",
+    desc: "La captura de un brinco lleno de energía, capturando el entusiasmo de la mascota al buscar el contacto físico en medio de las risas.",
+    aspect: "wide"
+  },
+  {
+    title: "Risa Canina",
+    categoryName: "Cómplices de Juego",
+    src: "bocetos/fotografia/complices_juego/foto3.jpg",
+    desc: "Vista cenital de un bostezo/juego expansivo que transmite la entrega total y la comodidad de sentirse seguro en casa.",
+    aspect: "tall"
+  }
+];
+
 // Estado global de modal
 let activeCollection = kupiItems;
 let activeIndex = 0;
@@ -251,7 +312,6 @@ function renderGrid(containerId, itemsList) {
   });
 }
 
-// RENDERIZAR OBRA SERIAL
 function renderSerialWork() {
   const container = document.getElementById("serialGrid");
   if (!container) return;
@@ -283,7 +343,6 @@ function renderSerialWork() {
   });
 }
 
-// RENDERIZAR CUADROS COMPARATIVOS (BOCETO VS ILUSTRACIÓN)
 function renderComparisons() {
   const container = document.getElementById("comparisonList");
   if (!container) return;
@@ -351,16 +410,18 @@ function openDrawingModal(index, side) {
   openModal(0);
 }
 
-// ACORDEÓN EXCLUSIVO PARA DISEÑO WEB (KUPI Y KANNAMARKET)
+// ACORDEÓN EXCLUSIVO PARA DISEÑO WEB (Se agregó Orion's Journey)
 function toggleWebProject(targetCardId) {
   const cardKupi = document.getElementById("cardKupi");
   const cardKannamarket = document.getElementById("cardKannamarket");
+  const cardOrion = document.getElementById("cardOrion"); // Nuevo
   const targetCard = document.getElementById(targetCardId);
 
   const isAlreadyOpen = targetCard.classList.contains("expanded");
 
   cardKupi.classList.remove("expanded");
   cardKannamarket.classList.remove("expanded");
+  if (cardOrion) cardOrion.classList.remove("expanded"); // Nuevo
 
   if (!isAlreadyOpen) {
     targetCard.classList.add("expanded");
@@ -384,7 +445,8 @@ function selectCategory(targetId) {
   const mapNav = {
     "cat-web": "web-ui",
     "cat-logos": "logos",
-    "cat-arte": "arte"
+    "cat-arte": "arte",
+    "cat-fotografia": "fotografia"
   };
   const activeNavKey = mapNav[targetId];
   navTabs.forEach(link => {
@@ -406,7 +468,8 @@ navTabs.forEach(tab => {
     const mapCategory = {
       "web-ui": "cat-web",
       "logos": "cat-logos",
-      "arte": "cat-arte"
+      "arte": "cat-arte",
+      "fotografia": "cat-fotografia"
     };
     selectCategory(mapCategory[navKey]);
   });
@@ -475,7 +538,12 @@ document.addEventListener("keydown", (e) => {
 document.addEventListener("DOMContentLoaded", () => {
   renderGrid("kupiGrid", kupiItems);
   renderGrid("kannaGrid", kannaItems);
+  renderGrid("orionGrid", orionItems); // Se agregó el render para Orion's Journey
+
   renderGrid("logosGrid", logosItems);
   renderSerialWork();
   renderComparisons();
+
+  renderGrid("fotoDanzaGrid", fotoDanza);
+  renderGrid("fotoSerieGrid", fotoSerie);
 });

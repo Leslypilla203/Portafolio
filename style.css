@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --bg-primary: #0a0d14;
   --bg-secondary: #111728;
@@ -130,6 +134,28 @@ body {
   color: var(--text-muted);
   max-width: 720px;
   margin: 0 auto 2.5rem;
+}
+
+.btn-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: transparent;
+  border: 2px solid var(--accent-cyan);
+  color: var(--accent-cyan);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 10px 26px;
+  border-radius: var(--radius-full);
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.btn-cv:hover {
+  background: var(--accent-cyan);
+  color: #0a0d14;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
 }
 
 /* BOTONES DE CATEGORÍA PRINCIPALES */
