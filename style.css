@@ -351,7 +351,7 @@ body {
 }
 
 .project-card-item.expanded .project-expandable-content {
-  max-height: 3000px;
+  max-height: none;
   border-top-color: var(--border-subtle);
 }
 
@@ -481,8 +481,26 @@ body {
 /* Grilla de Galería */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+#kupiGrid {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.1rem;
+}
+
+#kupiGrid .card-img-wrapper {
+  max-height: 320px;
+  padding: 0.4rem;
+}
+
+#kupiGrid .card-info {
+  padding: 0.85rem;
+}
+
+#kupiGrid .card-title {
+  font-size: 0.88rem;
 }
 
 .design-card {
